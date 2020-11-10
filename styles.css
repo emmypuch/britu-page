@@ -18,71 +18,110 @@ body {
   width: 100%;
 }
 
-#logo {
+.navbar {
+  font-size: 18pt;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.main-nav a {
+  color: #ccced1;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
   color: rgb(115, 71, 193);
-  font-size: 1.5rem;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 25pt;
+  margin-top: 10px;
+  margin-left: 20px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.nav {
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  width: 1000px;
-  margin: 2% auto;
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgb(115, 71, 193);
+  font-size: 20pt;
 }
 
-.nav a {
-  text-decoration: none;
-  padding: 1em;
+.active {
   display: block;
-  color: #ccced1;
-  font-size: 1.2rem;
 }
 
-.nav li:first-child {
-  margin-right: auto;
-}
-
-/* .nav a:hover {
-  background: rgb(115, 71, 193);
-  color: #e8dbef;
-  border-radius: 5px;
-} */
-
-@media (max-width: 800px) {
-  .nav {
-    justify-content: space-around;
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
   }
 
-  .nav li:first-child {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .nav {
-    flex-flow: column wrap;
-    padding: 0;
-    width: 100%;
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
-  .nav a {
-    text-align: center;
-    padding: 10px;
+  .main-nav li {
+    margin: 0;
   }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgb(115, 71, 193);
+  }
+
+  /* section.britu-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.britu-area .britu-intro h1 {
+    font-size: 20pt;
+    margin-top: 20%;
+  } */
 }
 
 section.britu-area {
   display: flex;
-  padding-left: 22%;
+  padding-left: 1%;
   padding-top: 6%;
 }
 
 section.britu-area .britu-intro h1 {
-  font-size: 2.5rem;
+  font-size: 45pt;
   color: #444766;
 }
 
@@ -92,27 +131,28 @@ section.britu-area .britu-intro h1 span {
 
 section.britu-area .britu-intro p {
   color: #ccced1;
-  font-size: 1rem;
+  font-size: 13pt;
   margin-top: 7px;
 }
 
 @media (max-width: 800px) {
+  .logo {
+    font-size: 18pt;
+  }
+
   section.britu-area {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  britu-intro {
-    margin-top: 30px;
-  }
-
   section.britu-area .britu-intro h1 {
-    font-size: 1.8rem;
+    font-size: 18pt;
+    margin-top: 30%;
   }
 
   section.britu-area .britu-intro p {
-    font-size: 0.8rem;
+    font-size: 10pt;
   }
 
   section.britu-input {
@@ -140,8 +180,8 @@ section.britu-area .britu-intro p {
 
 section.britu-input {
   display: flex;
-  padding-left: 22%;
-  padding-top: 6%;
+  padding-left: 1%;
+  padding-top: 4%;
 }
 
 section.britu-input input {
@@ -175,8 +215,9 @@ button {
 
 section.britu-footer {
   display: flex;
-  padding-left: 22%;
-  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
 }
 
 footer a {
@@ -186,5 +227,5 @@ footer a {
 
 footer {
   color: #ccced1;
-  font-size: 1.2rem;
+  font-size: 12pt;
 }
