@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-image: url("images/britu-img.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#logo {
+  color: rgb(115, 71, 193);
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 1000px;
+  margin: 2% auto;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+  color: #ccced1;
+  font-size: 1.2rem;
+}
+
+.nav li:first-child {
+  margin-right: auto;
+}
+
+/* .nav a:hover {
+  background: rgb(115, 71, 193);
+  color: #e8dbef;
+  border-radius: 5px;
+} */
+
+@media (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+  }
+
+  .nav li:first-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-flow: column wrap;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav a {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+section.britu-area {
+  display: flex;
+  padding-left: 14.5%;
+  padding-top: 6%;
+}
+
+section.britu-area .britu-intro h1 {
+  font-size: 2.5rem;
+  color: #444766;
+}
+
+section.britu-area .britu-intro h1 span {
+  color: #ccced1;
+}
+
+section.britu-area .britu-intro p {
+  color: #ccced1;
+  font-size: 1rem;
+  margin-top: 7px;
+}
+
+@media (max-width: 800px) {
+  section.britu-area {
+    padding: 0;
+  }
+
+  section.britu-area .britu-intro h1 {
+    font-size: 1.2rem;
+  }
+
+  section.britu-area .britu-intro p {
+    font-size: 0.6rem;
+  }
+}
