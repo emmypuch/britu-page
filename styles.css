@@ -103,12 +103,38 @@ section.britu-area .britu-intro p {
     align-items: center;
   }
 
+  britu-intro {
+    margin-top: 30px;
+  }
+
   section.britu-area .britu-intro h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   section.britu-area .britu-intro p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  section.britu-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.britu-input input {
+    width: 380px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 110px;
+  }
+
+  button {
+    padding: 5px 15px;
+    width: 90px;
+    position: relative;
+    left: -90px;
+    top: 0px;
   }
 }
 
