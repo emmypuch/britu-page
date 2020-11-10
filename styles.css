@@ -98,14 +98,66 @@ section.britu-area .britu-intro p {
 
 @media (max-width: 800px) {
   section.britu-area {
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   section.britu-area .britu-intro h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   section.britu-area .britu-intro p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
+}
+
+section.britu-input {
+  display: flex;
+  padding-left: 14.5%;
+  padding-top: 6%;
+}
+
+section.britu-input input {
+  border-radius: 20px;
+  background: #f4f5f7;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 110px;
+  border: #ccced1;
+  color: rgb(115, 71, 193);
+  font-size: 1.1rem;
+  outline-color: rgb(115, 71, 193);
+  box-shadow: 0 10px 10px 3px #e1e2e4;
+}
+
+button {
+  padding: 5px 15px;
+  width: 90px;
+  border-radius: 20px;
+  background: #ba63ff;
+  color: #ccced1;
+  position: relative;
+  left: -90px;
+  top: 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+section.britu-footer {
+  display: flex;
+  padding-left: 14.5%;
+  padding-top: 12%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer {
+  color: #ccced1;
+  font-size: 1.1rem;
 }
