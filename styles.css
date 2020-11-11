@@ -192,7 +192,7 @@ footer {
   body {
     background-image: url("images/britu-img.svg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: scroll;
     width: 100%;
