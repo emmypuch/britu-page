@@ -200,12 +200,12 @@ footer {
   }
 
   section.britu-area .britu-intro h1 {
-    font-size: 18pt;
-    margin-top: 35%;
+    font-size: 20pt;
+    margin-top: 55%;
   }
 
   section.britu-area .britu-intro p {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
   section.britu-input {
@@ -220,8 +220,8 @@ footer {
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 90px;
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 60px;
+    margin-left: 55px;
     font-size: 10pt;
   }
 
@@ -238,7 +238,7 @@ footer {
   }
 
   footer {
-    font-size: 10pt;
-    margin-top: 30px;
+    font-size: 12pt;
+    margin-top: 60px;
   }
 }
