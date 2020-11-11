@@ -5,10 +5,6 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   height: 100vh;
   background-image: url("images/britu-img.svg");
@@ -114,14 +110,16 @@ body {
   } */
 }
 
+/* Desktop britu-area */
+
 section.britu-area {
   display: flex;
   padding-left: 1%;
-  padding-top: 6%;
+  padding-top: 10%;
 }
 
 section.britu-area .britu-intro h1 {
-  font-size: 45pt;
+  font-size: 47pt;
   color: #444766;
 }
 
@@ -131,51 +129,8 @@ section.britu-area .britu-intro h1 span {
 
 section.britu-area .britu-intro p {
   color: #ccced1;
-  font-size: 13pt;
+  font-size: 14pt;
   margin-top: 7px;
-}
-
-@media (max-width: 800px) {
-  .logo {
-    font-size: 18pt;
-  }
-
-  section.britu-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  section.britu-area .britu-intro h1 {
-    font-size: 18pt;
-    margin-top: 30%;
-  }
-
-  section.britu-area .britu-intro p {
-    font-size: 10pt;
-  }
-
-  section.britu-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  section.britu-input input {
-    width: 380px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 110px;
-  }
-
-  button {
-    padding: 5px 15px;
-    width: 90px;
-    position: relative;
-    left: -90px;
-    top: 0px;
-  }
 }
 
 section.britu-input {
@@ -217,7 +172,8 @@ section.britu-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 12%;
+  padding-bottom: 10px;
 }
 
 footer a {
@@ -227,5 +183,62 @@ footer a {
 
 footer {
   color: #ccced1;
-  font-size: 12pt;
+  font-size: 13pt;
+}
+
+/* Mobile britu-page */
+
+@media (max-width: 800px) {
+  .logo {
+    font-size: 18pt;
+  }
+
+  section.britu-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.britu-area .britu-intro h1 {
+    font-size: 18pt;
+    margin-top: 35%;
+  }
+
+  section.britu-area .britu-intro p {
+    font-size: 10pt;
+  }
+
+  section.britu-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.britu-input input {
+    width: 380px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 90px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 10pt;
+  }
+
+  button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 25px;
+    width: 90px;
+    position: relative;
+    left: -76px;
+    top: 19.7px;
+    font-size: 8pt;
+  }
+
+  footer {
+    font-size: 10pt;
+    margin-top: 30px;
+  }
 }
