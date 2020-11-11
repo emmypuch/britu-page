@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background-image: url("images/britu-img.svg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -189,8 +189,14 @@ footer {
 /* Mobile britu-page */
 
 @media (max-width: 800px) {
-  .logo {
-    font-size: 18pt;
+  body {
+    background-image: url("images/britu-img.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100vh;
   }
 
   section.britu-area {
@@ -199,8 +205,12 @@ footer {
     align-items: center;
   }
 
+  .logo {
+    font-size: 18pt;
+  }
+
   section.britu-area .britu-intro h1 {
-    font-size: 20pt;
+    font-size: 25pt;
     margin-top: 55%;
   }
 
@@ -233,7 +243,7 @@ footer {
     width: 90px;
     position: relative;
     left: -76px;
-    top: 19.7px;
+    top: 30px;
     font-size: 8pt;
   }
 
