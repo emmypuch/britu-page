@@ -6,12 +6,22 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh;
+  
+  
+  width: 100%; */
+}
+
+.img-area {
+  height:100vh;
+  width: 100vw;
   background-image: url("images/britu-img.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .navbar {
@@ -68,6 +78,9 @@ body {
     padding-bottom: 0;
     height: 70px;
     align-items: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main-nav {
@@ -98,13 +111,13 @@ body {
     color: rgb(115, 71, 193);
   }
 
-  /* section.britu-area {
+  /* .britu-area {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  section.britu-area .britu-intro h1 {
+  .britu-area .britu-intro h1 {
     font-size: 20pt;
     margin-top: 20%;
   } */
@@ -112,34 +125,42 @@ body {
 
 /* Desktop britu-area */
 
-section.britu-area {
+.britu-area {
+  height: calc(100vh - 100px);
   display: flex;
-  padding-left: 1%;
-  padding-top: 10%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex; */
+  /* padding-left: 1%; */
+  /* padding-top: 10%; */
 }
 
-section.britu-area .britu-intro h1 {
+.britu-area .britu-intro h1 {
   font-size: 47pt;
   color: #444766;
 }
 
-section.britu-area .britu-intro h1 span {
+.britu-area .britu-intro h1 span {
   color: #ccced1;
 }
 
-section.britu-area .britu-intro p {
+.britu-area .britu-intro p {
   color: #ccced1;
   font-size: 14pt;
   margin-top: 7px;
 }
 
-section.britu-input {
+.britu-input {
   display: flex;
   padding-left: 1%;
   padding-top: 4%;
 }
 
-section.britu-input input {
+.britu-input input {
   border-radius: 20px;
   background: #f4f5f7;
   width: 400px;
@@ -168,11 +189,11 @@ button {
   cursor: pointer;
 }
 
-section.britu-footer {
+.britu-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 12%;
+  /* padding-top: 12%; */
   padding-bottom: 10px;
 }
 
@@ -190,16 +211,9 @@ footer {
 
 @media (max-width: 800px) {
   body {
-    background-image: url("images/britu-img.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    width: 100%;
-    height: 100vh;
   }
 
-  section.britu-area {
+  .britu-area {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,22 +223,22 @@ footer {
     font-size: 18pt;
   }
 
-  section.britu-area .britu-intro h1 {
+  .britu-area .britu-intro h1 {
     font-size: 25pt;
-    margin-top: 55%;
+    /* margin-top: 55%; */
   }
 
-  section.britu-area .britu-intro p {
+  .britu-area .britu-intro p {
     font-size: 12pt;
   }
 
-  section.britu-input {
+  .britu-input {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  section.britu-input input {
+  .britu-input input {
     width: 380px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -250,5 +264,21 @@ footer {
   footer {
     font-size: 12pt;
     margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-area {
+    position: static;
+    height: 250px;
+  }
+
+  .britu-area {
+    max-height: 300px;
+    text-align: center;
+  }
+
+  .britu-input {
+    max-width: 100%;
   }
 }
