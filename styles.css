@@ -5,15 +5,8 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-body {
-  /* height: 100vh;
-  
-  
-  width: 100%; */
-}
-
 .img-area {
-  height:100vh;
+  height: 100vh;
   width: 100vw;
   background-image: url("images/britu-img.svg");
   background-position: center;
@@ -110,17 +103,6 @@ body {
   .nav-links:hover {
     color: rgb(115, 71, 193);
   }
-
-  /* .britu-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .britu-area .britu-intro h1 {
-    font-size: 20pt;
-    margin-top: 20%;
-  } */
 }
 
 /* Desktop britu-area */
@@ -134,9 +116,6 @@ body {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  /* display: flex; */
-  /* padding-left: 1%; */
-  /* padding-top: 10%; */
 }
 
 .britu-area .britu-intro h1 {
@@ -149,7 +128,7 @@ body {
 }
 
 .britu-area .britu-intro p {
-  color: #ccced1;
+  color: #c5a1ce;
   font-size: 14pt;
   margin-top: 7px;
 }
@@ -180,7 +159,7 @@ button {
   width: 90px;
   border-radius: 20px;
   background: #ba63ff;
-  color: #ccced1;
+  color: #d8c6dd;
   position: relative;
   left: -90px;
   top: 0px;
@@ -203,8 +182,8 @@ footer a {
 }
 
 footer {
-  color: #ccced1;
-  font-size: 13pt;
+  color: #444766;
+  font-size: 15pt;
 }
 
 /* Mobile britu-page */
